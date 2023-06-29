@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plant_Doctor.View.Startup">
+    <ContentPage.Content>
+        <RelativeLayout BackgroundColor="#85D6D1">
+            <Image
+               Aspect="AspectFill"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+               Source="loginback.png"
+             />
+            <FlexLayout BackgroundColor="Black" Opacity="0.45"/>
+            <FlexLayout Direction="Row"  JustifyContent="Center" AlignItems="End">
+                <FlexLayout.Padding>0,0,0,140</FlexLayout.Padding>
+                <StackLayout Padding="15,0,15,0"  Spacing="0">
+                    <Image Source="logo.png" HeightRequest="120" Margin="0,0,0,60"/>
+                    <Label Text="Plant Doctor" HorizontalTextAlignment="Center" FontSize="50" FontAttributes="Bold" Margin="0,0,0,10" TextColor="White"/>
+                    <Label Text="   Plants fix the world, Let's fix them." TextColor="White" Opacity="0.7" FontSize="30" FontAttributes="None" HorizontalTextAlignment="Center" Margin="10,0,10,90" />
+                    <FlexLayout JustifyContent="SpaceBetween" Padding="15,0,15,0">
+                        <Button BorderWidth="1" WidthRequest="130" BorderColor="#CACACA"  Clicked="Startsignupfxn" CornerRadius="10" Margin="0,0,0,30" HorizontalOptions="Center" Text="Signup" BackgroundColor="#EBEEEF" TextColor="Black" FontSize="Large" TextTransform="None" FontAttributes="Bold" />
+                        <Button BorderWidth="1" WidthRequest="130" BorderColor="#CACACA"  Clicked="Startloginfxn" CornerRadius="10" Margin="0,0,0,30" HorizontalOptions="Center" Text="Login" BackgroundColor="#EBEEEF" TextColor="Black" FontSize="Large" TextTransform="None" FontAttributes="Bold" />
+                    </FlexLayout>
+                </StackLayout>
+            </FlexLayout>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
